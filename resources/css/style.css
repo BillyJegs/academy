@@ -61,10 +61,6 @@ nav span a {
 }
 
 @media only screen and (max-width: 425px) {
-    body {
-        width: 100%;
-    }
-
     .header {
         width: 100%;
         height: 64px;
@@ -73,7 +69,7 @@ nav span a {
     .header .logo {
         display: block;
         float: left;
-        margin-left: 4.37%;
+        margin-left: 8.74%;
         margin-right: 8.74%;
     }
     
@@ -91,7 +87,7 @@ nav span a {
     .mob-disp {
         display: block;
         float: left;
-        margin-left: 0;
+        margin-left: 7%;
         margin-right: 8.74%;
     }
 /* 
@@ -123,6 +119,15 @@ nav span a {
     }
 }
 
+@media only screen and (max-width: 320px) {
+    .header .logo {
+        display: block;
+        float: left;
+        margin-left: 4.9%;
+        margin-right: 8.74%;
+    }
+    
+}
 /* banner */
 .banner {
     display: block;
@@ -180,7 +185,7 @@ nav span a {
     .banner {
         display: block;
         float: none;
-        width: 65%;
+        width: 100%;
         height: auto;
         overflow: hidden;
         background-color: lightgrey;
@@ -247,6 +252,7 @@ nav span a {
 }
 
 .banner-2-content {
+    display: inline;
     float: left;
     width: 34.5%;
     margin-bottom: 55px;
@@ -361,8 +367,8 @@ nav span a {
         float: none;
         border-radius: 0;
         padding: 0;
-        width: 55%;
-        padding: 4%;
+        width: 90%;
+        padding: 5%;
     }
     
     .banner-2-content .list h4 {
@@ -378,7 +384,7 @@ nav span a {
     .banner-2-content .list h5 {
         float: none;
         font-size: 13px;
-        width: 50%;
+        width: 90%;
         margin-top: 0;
         padding: 0 8%;
         padding-bottom: 8px;
@@ -386,7 +392,7 @@ nav span a {
     
     .banner-2-content .list a {
         float: none;
-        width: 100%;
+        width: 90%;
         margin-top: 0;
         padding: 0 8%;
         font-size: 13px;
@@ -404,6 +410,10 @@ nav span a {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
+}
+
+.section .mob-disp {
+    display: none;
 }
 
 .section .row {
@@ -454,4 +464,206 @@ nav span a {
     padding: 8px 0;
     text-transform: uppercase;
 }
-  
+
+@media only screen and (max-width: 425px) {
+    .section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .section h2 {
+        width: 100%;
+        margin: 0 0;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .section .row {
+        display: none;
+    }
+
+    .section .mob-disp {
+        display: block;
+        width: 90%;
+        margin: 5%;
+    }
+
+    .section .mob-disp p {
+        text-align: left;
+        color: black;
+        font-size: 22px;
+        width: 95%;
+        padding: 5% 0;
+        padding-left: 5%;
+        background-color: lightgray;
+        margin-bottom: 8px;
+    }
+}
+
+/* thesis exhibits */
+.thesis {
+    display: block;
+}
+
+.thesis h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 32px;
+    margin-bottom: 32px;
+    font-weight: bolder;
+}
+
+.thesis-details {
+    display: inline-block;
+    float: left;
+    width: 58%;
+    padding-right: 1%;
+    padding-bottom: 32px;
+}
+
+.thesis-details video {
+    width: 95%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.thesis-details h4 {
+    padding-left: 24px;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.thesis-details h5 {
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.thesis-details .mob-disp {
+    display: block;
+}
+
+.thesis-content {
+    display: inline-block;
+    width: 40%;
+    padding-bottom: 32px;
+    margin-bottom: 130px;
+}
+
+.thesis-content .list-1 {
+    height: 210px;
+    background-color: lightgray;
+}
+
+.thesis-content .list-1 img {
+    display: block;
+    width: 35%;
+    height: auto;
+    padding: 16px;
+    float: left;
+}
+.thesis-content .list-1 h4 {
+    width: 90%;
+    padding-top: 35px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.thesis-content .list-2 {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 180px;
+}
+
+.thesis-content .list-2 h4 {
+    width: 90%;
+    padding-top: 35px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.thesis-content .list-2 h5 {
+    width: 90%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.thesis-content .list-2 img {
+    display: block;
+    width: 35%;
+    height: auto;
+    padding: 16px;
+    float: left;
+}
+
+@media only screen and (max-width: 425px) {
+    .thesis h2 {
+        width: 100%;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-size: 32px;
+    }
+    
+    .thesis-details {
+        display: block;
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .thesis-details video {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 24px;
+    }
+    
+    .thesis-details .mob-disp {
+        display: none;
+    }
+    
+    hr {
+        display: none;
+    }
+
+    .thesis-content {
+        display: none;
+    }
+}
+
+/* footer */
+footer {
+    display: block;
+    padding-top: 16px;
+    height: 60px;
+}
+
+footer h6 {
+    display: block;
+    float: left;
+    padding-left: 24px;
+}
+
+footer .right {
+    float: right;
+    padding-right: 24px;
+}
+
+footer .right span {
+    padding-left: 16px;
+}
+@media only screen and (max-width: 425px) {
+    footer h6 {
+        margin: 5%;
+    }
+
+    footer .right {
+        display: none;
+    }
+}
